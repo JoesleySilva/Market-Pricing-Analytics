@@ -1,0 +1,34 @@
+Testes obrigatórios no navegador
+URL	Resultado esperado
+http://localhost:3000/api
+	{ "status": "API OK" }
+http://localhost:3000/api/estabelecimentos
+	JSON com lista
+http://localhost:3000/api/produtos
+	JSON
+http://localhost:3000/api/precos
+	JSON
+http://localhost:3000/api/dashboard
+	
+	
+	
+	🔜 Próximo passo (se quiser)
+
+Agora que a API vai subir limpa, posso:
+
+✅ Ajustar GET /api/estabelecimentos corretamente
+
+✅ Fazer o frontend listar os estabelecimentos
+
+✅ Padronizar controller / routes / DB
+
+✅ Criar .env corretamente para Postgres
+
+
+🚀 Próximo passo (agora sim)
+
+Se isso funcionar, seguimos para:
+1️⃣ Corrigir o frontend para listar na tabela HTML
+2️⃣ Ajustar Produtos
+3️⃣ Ajustar Preços
+4️⃣ Dashboard automático

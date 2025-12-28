@@ -1,0 +1,20 @@
+backend/
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── config/
+│   │   └── database.js
+│   ├── routes/
+│   │   ├── produtos.routes.js
+│   │   ├── estabelecimentos.routes.js
+│   │   ├── precos.routes.js
+│   │   └── categorias.routes.js
+│   ├── controllers/
+│   │   ├── produtos.controller.js
+│   │   ├── estabelecimentos.controller.js
+│   │   ├── precos.controller.js
+│   │   └── categorias.controller.js
+│   └── middlewares/
+│       └── error.middleware.js
+├── .env
+├── package.json
