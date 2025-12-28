@@ -12,8 +12,7 @@ http://localhost:3000/api/dashboard
 	
 	
 	
-	🔜 Próximo passo (se quiser)
-
+	🔜 Próximo passo 
 Agora que a API vai subir limpa, posso:
 
 ✅ Ajustar GET /api/estabelecimentos corretamente
@@ -32,3 +31,16 @@ Se isso funcionar, seguimos para:
 2️⃣ Ajustar Produtos
 3️⃣ Ajustar Preços
 4️⃣ Dashboard automático
+
+
+⭐ PRÓXIMO NÍVEL 
+
+Dashboard com gráficos (Chart.js)
+
+Endpoint de comparação de preços
+
+Endpoint de histórico por período
+
+Documentação Swagger
+
+Docker (Postgres + API)
