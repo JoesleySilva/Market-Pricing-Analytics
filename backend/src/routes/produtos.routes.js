@@ -1,10 +1,12 @@
 import { Router } from 'express';
-import * as controller from '../controllers/produtos.controller.js';
+import {   listar,   buscarPorId,   criar,   atualizar,   remover } from '../controllers/produtos.controller.js'; 
 
 const router = Router();
 
-router.get('/', controller.listar);
-router.post('/', controller.criar);
-router.delete('/:id', controller.deletar);
+router.get('/', listar);
+router.get('/:id', buscarPorId);
+router.post('/', criar);
+router.put('/:id', atualizar);
+router.delete('/:id', remover);
 
 export default router;

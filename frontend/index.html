@@ -351,6 +351,8 @@
             <button class="tab-button" onclick="showTab('produtos', this)">📦 Produtos</button>
             <button class="tab-button" onclick="showTab('estabelecimentos', this)">🏪 Estabelecimentos</button>
             <button class="tab-button" onclick="showTab('relatorios', this)">📈 Relatórios</button>
+            <button class="tab-button" onclick="showTab('listaCompras', this)"> 🛒 Lista de Compras </button>
+            <button class="tab-button" onclick="showTab('lista-compras', this)"> 🛒 Lista de Compras </button>
         </div>
 
         <!-- Dashboard Tab -->
@@ -545,7 +547,7 @@
                 <textarea id="estabelecimentoEndereco" rows="2" placeholder="Endereço completo"></textarea>
             </div>
 
-            <button class="btn btn-success" onclick="cadastrarEstabelecimento()">➕ Adicionar Estabelecimento</button>
+            <button class="btn btn-success" id="btnEstabelecimento" onclick="salvarEstabelecimento()">  ➕ Adicionar Estabelecimento </button>
 
             <h3 style="margin-top: 40px;">Lista de Estabelecimentos</h3>
             <table class="data-table" id="tabelaEstabelecimentos">
@@ -566,42 +568,90 @@
 
         <!-- Relatórios Tab -->
         <div id="relatorios" class="tab-content">
-            <h2>Relatórios e Análises</h2>
-            
-            <h3>Menores Preços por Produto</h3>
-            <table class="data-table" id="tabelaMenoresPrecos">
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Marca</th>
-                        <th>Menor Preço</th>
-                        <th>Preço Médio</th>
-                        <th>Maior Preço</th>
-                        <th>Registros</th>
-                    </tr>
-                </thead>
-                <tbody id="menoresPrecosBody">
-                    <tr><td colspan="6" class="loading">Carregando...</td></tr>
-                </tbody>
-            </table>
+            <h2>🛒 Lista de Compras</h2>
 
-            <h3 style="margin-top: 40px;">Promoções Ativas</h3>
-            <table class="data-table" id="tabelaPromocoes">
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Estabelecimento</th>
-                        <th>Preço Promoção</th>
-                        <th>Data</th>
-                    </tr>
-                </thead>
-                <tbody id="promocoesBody">
-                    <tr><td colspan="4" class="loading">Carregando...</td></tr>
-                </tbody>
-            </table>
+    <div class="form-grid">
+        <div class="form-group">
+            <label>Produto</label>
+            <select id="listaProdutoSelect">
+                <option value="">Selecione o produto</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quantidade</label>
+            <input type="number" id="listaQuantidade" min="1" value="1">
         </div>
     </div>
 
+    <button class="btn btn-success" onclick="adicionarProdutoLista()">
+        ➕ Adicionar à Lista
+    </button>
+
+    <table class="data-table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaComprasBody">
+            <tr>
+                <td colspan="3" class="loading">Nenhum item adicionado</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <!-- Lista de Compras Tab -->
+    <div id="listaCompras" class="tab-content">
+
+  <div class="card">
+
+    <h2>🛒 Lista de Compras</h2>
+
+    <!-- SELEÇÃO DE PRODUTO -->
+    <div class="form-inline">
+      <select id="listaProdutoSelect">
+        <option value="">Selecione um produto</option>
+      </select>
+
+      <input
+        type="number"
+        id="listaQuantidade"
+        placeholder="Qtd"
+        min="1"
+      >
+
+      <button class="btn btn-success" onclick="adicionarProdutoLista()">
+        ➕ Adicionar
+      </button>
+    </div>
+
+    <hr>
+
+    <!-- TABELA DA LISTA -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody id="listaComprasBody">
+        <tr>
+          <td colspan="3">Nenhum item adicionado</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+    </div>
     <script src="./js/app.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ import estabelecimentosRoutes from './routes/estabelecimentos.routes.js';
 import produtosRoutes from './routes/produtos.routes.js';
 import precosRoutes from './routes/precos.routes.js';
 import dashboardRoutes from './routes/dashboard.routes.js';
+import categoriasRoutes from './routes/categorias.routes.js';
 
 
 const app = express();
@@ -16,7 +17,7 @@ app.use('/api/estabelecimentos', estabelecimentosRoutes);
 app.use('/api/produtos', produtosRoutes);
 app.use('/api/precos', precosRoutes);
 app.use('/api/dashboard', dashboardRoutes);
-
+app.use('/api/categorias', categoriasRoutes);
 
 app.get('/api', (req, res) => {
     res.json({ status: 'API OK' });

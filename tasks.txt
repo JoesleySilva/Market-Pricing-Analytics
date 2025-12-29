@@ -44,3 +44,113 @@ Endpoint de histórico por período
 Documentação Swagger
 
 Docker (Postgres + API)
+
+🔜 PRÓXIMOS PASSOS SUGERIDOS
+
+Posso te ajudar agora a:
+
+1️⃣ Fazer o mesmo para Produtos
+2️⃣ Implementar o POST de Preços corretamente
+3️⃣ Criar Dashboard real com contadores
+4️⃣ Adicionar loading / empty states
+5️⃣ Criar Swagger / OpenAPI
+
+
+🔜 PRÓXIMOS PASSOS (recomendados)
+
+Posso te ajudar a:
+
+1️⃣ Criar Modal Bootstrap-like sem framework
+2️⃣ Implementar CRUD de Produtos igualzinho
+3️⃣ Finalizar Cadastro de Preços (FKs corretas)
+4️⃣ Criar Dashboard real com SQL agregado
+5️⃣ Preparar o projeto para deploy (Railway / Render / Fly.io)
+
+Ajusto o frontend (botões Editar / Excluir)
+
+Ou faço um teste completo com curl / Postman
+
+Ou organizo isso como API profissional (LinkedIn-ready)
+
+valido CNPJ
+
+ou organizo isso como API profissional para portfólio
+
+padronizo o PUT (update)
+
+deixo CRUD 100% alinhado com o frontend
+
+impedir edição de CNPJ
+
+validar CNPJ automaticamente
+
+adicionar botão Cancelar edição
+
+transformar em modal
+
+ou revisar também Produtos e Preços
+🔄 conectar Editar / Excluir produtos no frontend
+
+🎨 criar modal de edição
+
+📊 incluir estatísticas no dashboard
+
+🧪 te passar coleção Postman
+
+🔍 revisar seu app.js inteiro
+
+📊 implementar gráficos no dashboard
+
+🔄 atualizar dashboard em tempo real após CRUD
+
+🧹 padronizar DTOs (API → frontend)
+
+✔️ atualizar dashboard automaticamente após CRUD
+
+📊 criar gráficos (Chart.js)
+
+🔄 normalizar DTOs (API → Front)
+
+🧹 separar dashboard.js, produtos.js, estabelecimentos.js
+
+Próximos upgrades (quando quiser)
+
+Agora que a base está sólida, podemos:
+
+✏️ Editar produto
+
+🗑️ Excluir produto
+
+🔎 Buscar por categoria
+
+📊 Dashboard com gráfico de preços
+
+🔐 Validação de CNPJ / código de barras
+
+📦 Controle de histórico de preços
+
+
+ABA LISTAR COMPRAS
+🚀 Próximo nível (sugestões)
+
+Você pode evoluir essa aba para:
+
+1️⃣ Comparar mercados
+
+“Onde essa lista sai mais barata?”
+
+2️⃣ Salvar lista no banco
+
+lista_compras
+
+lista_compras_itens
+
+3️⃣ Exportar PDF / CSV
+
+4️⃣ Histórico de listas
+
+Agora que a Lista de Compras está visualmente correta, o próximo upgrade lógico é:
+
+1️⃣ Botão “Comparar Preços”
+2️⃣ Mostrar mercado mais barato
+3️⃣ Salvar lista no banco
